@@ -1,11 +1,13 @@
 let rootPath = "https://mysite.itvarsity.org/api/ContactBook/";
 
-document.getElementById(submitApiKey).addEventListener("click", setAPiKey);
+document.getElementById("submitApiKey").addEventListener("click", setAPiKey);
 
 function setAPiKey(e) {
-    e.preventDafault();
+    
+    e.preventDefault();
 
     apiKey = document.getElementById("apiKey").value;
+    
     fetch(rootPath + "controller/api-key/?apiKey=" + apiKey).then(function (response) {
         return response.text();
     }).then(function (data) {
