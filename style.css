@@ -62,3 +62,60 @@ td {
     vertical-align: middle;
     border-bottom: 1px solid #a55c5c;
 }
+
+/* Form styling similar to .contacts-table */
+#editForm {
+    background: #ac5454;
+    color: #f5e9e9;
+    border-radius: 35px;
+    box-shadow: 0px -2px 25px rgba(230, 101, 101, 0.761);
+    max-width: 600px;
+    width: 90%;
+    margin: 40px auto 0 auto;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#editForm label {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+#editForm input[type="text"],
+#editForm input[type="email"],
+#editForm input[type="file"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #e8c8c8;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#editForm input[type="file"] {
+    background: #fff;
+    color: #ac5454;
+}
+
+#editForm button,
+#homelink {
+    min-width: 120px;
+    padding: 10px 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 600;
+    background: #f5e9e9;
+    color: #ac5454;
+    margin-top: 10px;
+}
+
+#editForm button:hover,
+#homelink:hover {
+    background: #ac5454;
+    color: #f5e9e9;
+    border: 1px solid #f5e9e9;
+}

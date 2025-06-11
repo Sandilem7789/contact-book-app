@@ -1,4 +1,7 @@
 let refresh = document.getElementById("refresh");
+let addContactButton = document.getElementById("addContact");
+
+addContactButton.addEventListener("click", addContact);                // Add a click event listener to the add contact button
 
 refresh.addEventListener("click", function() {
     fetchContacts();
@@ -41,4 +44,8 @@ function displayOutput(data) {
     }
     output += `</table>`;
     document.getElementById("table").innerHTML = output;
+}
+
+function addContact() {
+    window.open("add-contact.html", "_self");                                   // Redirect to the add contact page
 }
