@@ -2,6 +2,16 @@ let rootPath = "https://mysite.itvarsity.org/api/ContactBook/";
 
 document.getElementById("submitApiKey").addEventListener("click", setAPiKey);
 
+/**
+ * Handles the API key submission event.
+ * 
+ * Prevents the default form submission, retrieves the API key from the input field,
+ * sends it to the server for validation, and processes the response.
+ * If the API key is valid, it is saved to localStorage and the user is redirected to the main page.
+ * If invalid, an alert is shown to the user.
+ *
+ * @param {Event} e - The event object from the form submission.
+ */
 function setAPiKey(e) {
     
     e.preventDefault();
