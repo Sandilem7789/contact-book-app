@@ -35,7 +35,7 @@ function displayOutput(data) {
     for (a in data) {
         console.log(data[a].firstname + " " + data[a].lastname);
         output += `
-            <tr>
+            <tr onclick="editContact(${data[a].id})">
                 <td><img src="${rootPath}controller/uploads/${data[a].avatar}"></td>
                 <td><h5>${data[a].firstname}</h5></td>
                 <td><h5>${data[a].lastname}</h5></td>
@@ -48,4 +48,9 @@ function displayOutput(data) {
 
 function addContact() {
     window.open("add-contact.html", "_self");                                   // Redirect to the add contact page
+}
+
+// this function is for editing contacts
+function editContact(id) {
+    window.open("edit-contact.html?id=" + id, "_self");                         // Redirect to the edit contact page with the contact ID
 }

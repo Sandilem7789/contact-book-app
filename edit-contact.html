@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Contact</title>
+</head>
+<body>
+    <div id="avatarImage"></div>
+    <form id="editForm">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstname" readonly>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastname" readonly>
+
+        <label for="mobile">Mobile</label>
+        <input type="text" id="mobile" name="mobile" readonly>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" readonly>
+
+        <label for="avatar" id="avatarLabel" hidden>Change Profile Image</label>
+        <input type="file" id="avatar" name="avatar" accept="image/*" hidden>
+
+        <button id="submitForm" type="submit" hidden>Submit</button>
+    </form>
+    <br>
+    <div id="buttons">
+        <button id="homeLink" type="button">Home</button>
+        <button id="editContact" type="button">Edit</button>
+        <button id="deleteContact" type="button">Delete</button>
+    </div>
+    
+
+    <script src="config.js"></script>
+    <script src="edit-contact.js"></script>
+</body>
+</html>
