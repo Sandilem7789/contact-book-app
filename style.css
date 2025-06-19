@@ -51,6 +51,15 @@
     margin: 0 auto;
 }
 
+/*Styling the image from displayOut - displayign the details of the contact*/
+#avatarImage img {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
 tr {
     width: 100%;
     text-align: left;
@@ -108,7 +117,7 @@ td {
     cursor: pointer;
     transition: background 0.2s, color 0.2s;
     font-weight: 600;
-    background: #f5e9e9;
+    background: #fff;
     color: #ac5454;
     margin-top: 10px;
 }

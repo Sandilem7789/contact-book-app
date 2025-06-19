@@ -19,7 +19,7 @@ function fetchContacts() {
         return response.json();
     }).then(function (data) {
         displayOutput(data);
-        console.log(data);
+        //console.log(data);
     })
 }
 
